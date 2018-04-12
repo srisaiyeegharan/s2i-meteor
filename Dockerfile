@@ -16,7 +16,7 @@ LABEL io.k8s.description="Platform for building meteor apps" \
 
 # Install required packages here:
 RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
-RUN apt-get install -y nodejs
+RUN sudo apt-get install -y nodejs
 #RUN yum install -y epel-release nodejs npm && yum clean all -y
 
 # This default user is created in the openshift/base-centos7 image
