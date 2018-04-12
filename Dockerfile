@@ -24,7 +24,7 @@ RUN yum install -y nodejs
 USER 1001
 
 RUN curl -sL https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh
-RUN meteor npm install --save babel-runtime
+
 
 # TODO (optional): Copy the builder files into /opt/app-root
 #COPY ./<builder_folder>/ /opt/app-root/
