@@ -16,6 +16,7 @@ LABEL io.k8s.description="Platform for building meteor apps" \
 
 # Install required packages here:
 RUN curl -sL https://rpm.nodesource.com/setup_6.x | bash -
+RUN yum install -y nodejs
 #RUN sudo apt-get install -y nodejs
 #RUN yum install -y epel-release nodejs npm && yum clean all -y
 
