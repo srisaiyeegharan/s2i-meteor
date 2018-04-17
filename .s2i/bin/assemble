@@ -28,5 +28,5 @@ echo "---> Building application from source..."
 cd /tmp/src/
 $HOME/.meteor/meteor build --directory /tmp/bundle-dir
 cd /tmp/bundle-dir/bundle/programs/server/
-meteor npm install
+npm install -g
 mv /tmp/bundle-dir/bundle $HOME/built_app
