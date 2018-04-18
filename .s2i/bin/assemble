@@ -31,5 +31,7 @@ $HOME/.meteor/meteor build --directory /tmp
 cd /tmp/bundle/programs/server/
 npm install --production
 npm install --save @babel/runtime
+npm install --save bcrypt
+export MONGO_URL='mongodb://shcm:shcm@ds233739.mlab.com:33739/shcm'
 cd ../../
 mv /tmp/bundle $HOME/built_app
