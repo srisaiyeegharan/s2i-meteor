@@ -30,5 +30,6 @@ cd /tmp/src/
 $HOME/.meteor/meteor build --directory /tmp
 cd /tmp/bundle/programs/server/
 npm install --production
+npm install --save @babel/runtime
 cd ../../
 mv /tmp/bundle $HOME/built_app
