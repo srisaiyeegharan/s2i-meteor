@@ -37,7 +37,7 @@ COPY ./.s2i/bin/ /usr/libexec/s2i
 #RUN chown -R 1001:1001 /opt/app-root
 
 # Set the default port for applications built using this image
-EXPOSE 8080
+EXPOSE 3000
 
 # Set the default CMD for the image
 CMD ["usage"]
