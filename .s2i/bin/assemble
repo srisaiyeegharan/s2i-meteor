@@ -15,9 +15,9 @@ fi
 
 # Restore artifacts from the previous build (if they exist).
 #
-if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
-  mv /tmp/artifacts/.meteor $HOME/.meteor
-fi
+#if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
+#  mv /tmp/artifacts/.meteor $HOME/.meteor
+#fi
 
 
 #echo "---> Installing application source..."
@@ -30,7 +30,7 @@ cd /tmp/src/
 
 
 # Set Meteor Variable
-$PATH=$PATH:$HOME/.meteor
+#$PATH=$PATH:$HOME/.meteor
 
 $HOME/.meteor/meteor build --directory /tmp
 cd /tmp/bundle/programs/server/
