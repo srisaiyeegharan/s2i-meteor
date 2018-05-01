@@ -21,10 +21,13 @@ RUN yum install -y nodejs
 #RUN sudo apt-get install -y nodejs
 #RUN yum install -y epel-release nodejs npm && yum clean all -y
 
+RUN curl -sL https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh
+
+
 # This default user is created in the openshift/base-centos7 image
 USER 1001
 
-RUN curl -sL https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh
+
 
 
 # TODO (optional): Copy the builder files into /opt/app-root
