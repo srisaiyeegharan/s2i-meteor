@@ -27,9 +27,6 @@ echo "---> Building application from source..."
 # TODO: Add build steps for your application, eg npm install, bundle install
 
 cd /tmp/src/
-
-
-
 $HOME/.meteor/meteor build --directory /tmp
 cd /tmp/bundle/programs/server/
 meteor npm install --production
