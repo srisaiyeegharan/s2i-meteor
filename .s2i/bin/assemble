@@ -19,6 +19,7 @@ if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   mv /tmp/artifacts/.meteor $HOME/.meteor
 fi
 
+
 #echo "---> Installing application source..."
 #cp -Rf /tmp/src/. ./
 
@@ -26,6 +27,10 @@ echo "---> Building application from source..."
 # TODO: Add build steps for your application, eg npm install, bundle install
 
 cd /tmp/src/
+
+
+# Set Meteor Variable
+$PATH=$PATH:/$HOME/.meteor
 
 $HOME/.meteor/meteor build --directory /tmp
 cd /tmp/bundle/programs/server/
