@@ -27,9 +27,6 @@ RUN curl -sL https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh
 # This default user is created in the openshift/base-centos7 image
 USER 1001
 
-#Echo path
-echo $PATH
-
 # TODO (optional): Copy the builder files into /opt/app-root
 #COPY ./<builder_folder>/ /opt/app-root/
 
