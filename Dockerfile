@@ -23,7 +23,7 @@ RUN yum install -y nodejs
 
 RUN curl -sL https://install.meteor.com | sed s/--progress-bar/-sL/g | /bin/sh
 
-$PATH = $PATH:/usr/local/bin/meteor
+$PATH = $PATH:\$HOME/.meteor
 
 # This default user is created in the openshift/base-centos7 image
 USER 1001
